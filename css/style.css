@@ -1,0 +1,289 @@
+:root{
+    --main-color:#e65f78;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    font-family: "Nunito", sans-serif;
+
+}
+/* &globel styles */
+.header-section{
+
+}
+
+.mouse{
+    width: 50px;
+    height: 80px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 15px ;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+    animation: mouse 0.5s linear infinite ;
+
+}
+.mouse::before{
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7px ;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+@keyframes mouse {
+    0%{bottom:15px ;}
+    25%{bottom:25px ;}
+    50%{bottom:15px ;}
+    75%{bottom:25px ;}
+    0%{bottom:15px ;}
+}
+.setting{
+    background-color: var(--main-color);
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 0 10px;
+}
+.setting i{
+    color: #fff;
+}
+.header-content h1::after{
+    content: "";
+    animation: header-animation 5s infinite;
+}
+@keyframes header-animation {
+    0% {content: "|";}
+    3% {content: "D|";}
+    5% {content: "De|";}
+    7% {content: "Dev|";}
+    10% {content: "Deve|";}
+    13% {content: "Devel|";}
+    15% {content: "Develo|";}
+    17% {content: "Develop|";}
+    20% {content: "Developm|";}
+    24% {content: "Developme|";}
+    25% {content: "Developmen|";}
+    27% {content: "Development|";}
+    30% {content: "Development|";}
+    32% {content: "Developmen|";}
+    35% {content: "Developme|";}
+    37% {content: "Develop|";}
+    40% {content: "Develo|";}
+    42% {content: "Devel|";}
+    45% {content: "Deve|";}
+    47% {content: "Dev|";}
+    50% {content: "De|";}
+    52% {content: "Des|";}
+    55% {content: "Desi|";}
+    57% {content: "Desig|";}
+    60% {content: "Design|";}
+    62% {content: "Designe|";}
+    65% {content: "Designer|";}
+    67% {content: "Designer|";}
+    70% {content: "Designe|";}
+    72% {content: "Design|";}
+    75% {content: "Desig|";}
+    77% {content: "Desi|";}
+    80% {content: "Des|";}
+    82% {content: "De|";}
+    85% {content: "Dev|";}
+    87% {content: "Deve|";}
+    90% {content: "Devel|";}
+    92% {content: "Develo|";}
+    95% {content: "Develop|";}
+    97% {content: "Develope|";}
+    100% {content: "Developer|";}
+  }
+
+/* & navbar styles */
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--main-color);
+}
+
+/* & home styles */
+.home{
+    background-image:linear-gradient(#0009,#0009) , url("../images/header-bg.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size:  cover;
+}
+
+.header-content h1{
+    color: #fff;
+    font-size: 65px;
+    line-height: 78px;
+}
+.header-content .intro{
+    color: #fff;
+    font-size: 28px;
+    line-height: 48px;
+}
+.header-content p{
+    color: #6c757d;
+}
+.btn-header{
+    background-color: transparent;
+    padding: 16px 48px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.btn-header:hover{
+    background-color: #fff;
+    color: #6c757d;
+    border: none;
+}
+
+/* & about styles */
+.about{
+    padding-block: 50px;
+}
+.about-img{
+    padding: 4px;
+    border: 1px solid gray;
+}
+.about h3 span{
+    color: var(--main-color);
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+.list li{
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid gray;
+border-radius: 50%;
+transition: all 0.3s linear;
+}
+.list li i{
+    transition: all 0.3s linear;
+    color: #6c757d; 
+}
+
+.list li:hover{
+    border: 1px solid var(--main-color);
+}
+.list li:hover i{
+    color:  var(--main-color);
+}
+/*  & Clients Section  */
+.clients{
+    padding-block: 50px;
+    background-color: #eee;
+}
+.client-card i{
+     color: var(--main-color);
+}
+.carousel-indicators [data-bs-target]{
+    /* color: var(--main-color);  */
+    background-color: var(--main-color);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.carousel-indicators {
+    bottom: -50px;
+   
+}
+
+.portfolio{
+    padding: 50px 0;
+}
+.portfolio-card{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .layer{
+position: absolute;
+top: 100%;
+left: 0;
+background-color: rgba(0, 0, 0, 0.6);
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+transition: all 0.3s linear;
+color: #fff;
+}
+.portfolio-image{
+transition: all 0.3s linear;
+}
+.portfolio-card:hover .layer{
+    top: 0;
+}
+.portfolio-card:hover .portfolio-image{
+    transform: scale(1.07);
+}
+
+ul.nav{
+    justify-content: center;
+}
+
+.nav-item button{
+   color:#000;
+}
+
+.nav-pills .nav-link.active{
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.blog {
+    padding: 50px 0;
+    background-color: #eee;
+}
+
+.blog-card{
+padding: 5px;
+background-color: #fff;
+}
+.blog-image{
+
+}
+.blog-text span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+.blog-text a{
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+}
+.contact{
+    padding: 50px 0;
+}
+.contact-card i{
+    color:var(--main-color)
+}
+form .inputs input{
+    width: 49%;
+}
+.contact form button{
+    color: #fff;
+    background-color: var(--main-color);
+    margin-top: 20px;
+    margin-left: auto;
+   display: block;
+}

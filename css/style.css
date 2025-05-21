@@ -43,6 +43,22 @@ body{
     75%{bottom:25px ;}
     0%{bottom:15px ;}
 }
+.scroll-to-top{
+position: fixed;
+bottom:20px ;
+right: 20px;
+cursor: pointer;
+}
+.scroll-to-top .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e65f78;
+    color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 .setting{
     background-color: var(--main-color);
     width: 45px;
@@ -109,6 +125,11 @@ body{
 /* & navbar styles */
 .navbar-light .navbar-nav .nav-link.active{
     color: var(--main-color);
+}
+.nav-fixed{
+    position: fixed !important;
+    z-index: 10;
+    background-color: #e65f78;
 }
 
 /* & home styles */

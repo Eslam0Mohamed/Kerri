@@ -9,10 +9,6 @@ body{
 
 }
 /* &globel styles */
-.header-section{
-
-}
-
 .mouse{
     width: 50px;
     height: 80px;
@@ -279,9 +275,6 @@ ul.nav{
 .blog-card{
 padding: 5px;
 background-color: #fff;
-}
-.blog-image{
-
 }
 .blog-text span{
     color: var(--main-color);
